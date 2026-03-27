@@ -94,7 +94,7 @@ footer {
     "nv nv nv"
     "mn mn mn"
     "ft ft ft";
-    grid-template-rows: 20vh 1fr 5vh;
+    grid-template-rows: 20vh 5vh 1fr 5vh;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .menu-btn{
