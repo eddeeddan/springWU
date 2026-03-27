@@ -1,13 +1,5 @@
 #wrapper1 {
     height: 100vh;
-
-    display: grid;
-    grid-template-areas:
-    "mb hd as"
-    "mn mn mn"
-    "ft ft ft";
-    grid-template-rows: 20vh 1fr 5vh;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #wrapper2 {
