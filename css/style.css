@@ -57,10 +57,13 @@ footer {
         grid-template-rows: 10vh 1fr 5vh;
 }
     #wrapperm {
+        height: 100vh;
 
-        display: grid;
-        grid-template-areas:
-        ;
+        display: grid;grid-template-areas:
+        "tp"
+        "mn"
+        "ft";
+        grid-template-rows: 10vh 1fr 5vh;
 }
     #wrappera {
 
@@ -130,7 +133,10 @@ footer {
 
         display: grid;
         grid-template-areas:
-        ;
+        "tp"
+        "mn"
+        "ft";
+        grid-template-rows: 10vh 1fr 5vh;
 }
     #wrappera {
 
