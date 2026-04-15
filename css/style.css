@@ -76,7 +76,7 @@ footer {
         "ft";
         grid-template-rows: 10vh 1fr 5vh;
 }
-    #wrappero {
+    #wrapperc {
 
         display: grid;
         grid-template-areas:
@@ -147,9 +147,12 @@ footer {
 
         display: grid;
         grid-template-areas:
-        ;
+        "tp"
+        "mn"
+        "ft";
+        grid-template-rows: 10vh 1fr 5vh;
 }
-    #wrappero {
+    #wrapperc {
 
         display: grid;
         grid-template-areas:
