@@ -1,5 +1,9 @@
 main {
     grid-area: mn;
+    /*background-color: burlywood;*/
+    background-image: url("../img/backgrounds/background1.jpg");
+        background-size: cover;
+        background-position: center;
 }
 
 footer {
@@ -39,6 +43,7 @@ iframe {
   }
     h1 {
         grid-area: hd;
+        justify-content: center;
   }
     #logo {
         grid-area: lg;
@@ -116,6 +121,8 @@ iframe {
   }
     h1 {
         grid-area: hd;
+        display: flex;
+        justify-content: center;
   }
     #logo {
         grid-area: lg;
@@ -134,6 +141,10 @@ iframe {
         display: none;
     }
 
+    #maini {
+        
+    }
+
 
     #wrapperi {
         height: 100vh;
@@ -143,34 +154,37 @@ iframe {
         "tp"
         "mn"
         "ft";
-        grid-template-rows: 10vh 1fr 5vh;
+        grid-template-rows: 10vh 1fr 2vh;
 }
     #wrapperm {
+        height: 100vh;
 
         display: grid;
         grid-template-areas:
         "tp"
         "mn"
         "ft";
-        grid-template-rows: 10vh 1fr 5vh;
+        grid-template-rows: 10vh 1fr 2vh;
 }
     #wrappera {
+        height: 100vh;
 
         display: grid;
         grid-template-areas:
         "tp"
         "mn"
         "ft";
-        grid-template-rows: 10vh 1fr 5vh;
+        grid-template-rows: 10vh 1fr 2vh;
 }
     #wrapperc {
+        height: 100vh;
 
         display: grid;
         grid-template-areas:
         "tp"
         "mn"
         "ft";
-        grid-template-rows: 10vh 1fr 5vh;
+        grid-template-rows: 10vh 1fr 2vh;
 }
 
 }
