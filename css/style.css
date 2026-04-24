@@ -122,7 +122,9 @@ iframe {
 
         display: grid;
         grid-template-areas:
-        ;
+        "tp"
+        "mn"
+        "ft";
 }
 
 }
