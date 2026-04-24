@@ -1,9 +1,18 @@
 main {
     grid-area: mn;
-    /*background-color: burlywood;*/
-    background-image: url("../img/backgrounds/background1.jpg");
-        background-size: cover;
-        background-position: center;
+    background-color: burlywood;
+}
+
+section {
+    background-color: magenta;
+}
+
+#mobilenav.show {
+    left: 0;
+}
+
+.fade-layer.visible {
+    display: block;
 }
 
 footer {
@@ -15,10 +24,6 @@ footer {
 .menu-btn img {
   width: 100%;
   height: 100%;
-}
-
-.socialIcon {
-    height: 18px;;
 }
 
 iframe {
@@ -51,9 +56,30 @@ iframe {
         width: 15vw;
         height: 15vw;
 }
-    nav  {
+    #desktopnav  {
         display: none;
-    } 
+    }
+    #mobilenav {
+        height: 100vh;
+        width: 80vw;
+        background: hotpink;
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 10;
+    }
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 5;
+    }
     .menu-btn {
         grid-area: mb;
 
@@ -130,19 +156,35 @@ iframe {
         width: 10vh;
         height: 10vh;
 }
-    nav  {
+    #desktopnav  {
         grid-area: nv;
 
         display: flex;
         justify-content: center;
         align-items: center;
-    } 
+    }
+    #mobilenav {
+        display: none;
+    }
+    .fade-layer{
+        display: none;
+    }
     .menu-btn {
         display: none;
     }
 
     #maini {
-        
+        background-image: url('../img/backgrounds/backgroun1_org.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #meny{
+        display: flex;
+    }
+    .menu-item {
+        background-color:lightcoral;
+        width: 20vw;
     }
 
 
