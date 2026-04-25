@@ -11,6 +11,10 @@ section {
     left: 0;
 }
 
+.socialIcon {
+    height: 18px;;
+}
+
 .fade-layer.visible {
     display: block;
 }
@@ -186,7 +190,6 @@ iframe {
     }
     .menu-item {
         background-color:lightcoral;
-        width: 20vw;
     }
 
 
