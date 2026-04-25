@@ -1,10 +1,31 @@
+:root {
+    --primary-clr: #6f150d;
+    --secondary-clr: #e88921;
+    --accent-clr: #945e0d;
+    --background-clr: #101a3d;
+    --text-clr1: #333;
+    --text-clr2: #ffffff;
+    --font-main: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-clr2);
+    background-color: var(--background-clr);
+}
+
 main {
     grid-area: mn;
-    background-color: burlywood;
+    background-color: var(--secondary-clr);
 }
 
 section {
-    background-color: magenta;
+    background-color: var(--primary-clr);
+    margin: 1rem;
+}
+article {
+    background-color: var(--accent-clr);
+    margin: 1rem;
 }
 
 #mobilenav.show {
@@ -35,11 +56,11 @@ iframe {
     height: 450px;
 }
 
+/* Temporary */
+
 /* mobil */
 @media screen and (max-width: 1000px) {
-    body {
-        background-color: lightgreen;
-  }
+    /* Header */
     header {
         grid-area: tp;
         height: 100%;
@@ -66,7 +87,7 @@ iframe {
     #mobilenav {
         height: 100vh;
         width: 80vw;
-        background: hotpink;
+        background: var(--background-clr);
         position: fixed;
         top: 0;
         left: -90vw;
@@ -86,15 +107,55 @@ iframe {
     }
     .menu-btn {
         grid-area: mb;
-
         width: 10vw;
         height: 10vw;
     }
+    .menu-btn i {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10vw;
+    }
+    
+    #kebabpizza {
+        grid-area: kp;
+    }
+    #inbakadpizza {
+        grid-area: ip;
+    }
+    #kebaber {
+        grid-area: kb;
+    }
+    #sallader {
+        grid-area: sd;
+    }
+    #meny{
+        display: grid;
+        grid-template-areas:
+        "kp"
+        "ip"
+        "kb"
+        "sd";
+    }
+    .menu-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin: 1rem;
+        width: 35%;
+    }
+    #menu-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-
+    /* Wrappers */
     #wrapperi {
         height: 100vh;
-
         display: grid;
         grid-template-areas:
         "tp"
@@ -104,7 +165,6 @@ iframe {
 }
     #wrapperm {
         height: 100vh;
-
         display: grid;
         grid-template-areas:
         "tp"
@@ -114,7 +174,6 @@ iframe {
 }
     #wrappera {
         height: 100vh;
-
         display: grid;
         grid-template-areas:
         "tp"
@@ -123,7 +182,7 @@ iframe {
         grid-template-rows: 10vh 1fr 5vh;
 }
     #wrapperc {
-
+        height: 100vh;
         display: grid;
         grid-template-areas:
         "tp"
@@ -135,10 +194,7 @@ iframe {
 
 /* desktop */
 @media screen and (min-width: 1000px) {
-    body {
-        background-color: lightblue;
-}
-
+    /* Header */
     header {
         grid-area: tp;
         height: 100%;
@@ -189,13 +245,54 @@ iframe {
         display: flex;
     }
     .menu-item {
-        background-color:lightcoral;
+        /* background-color:lightcoral; */
+    }
+    /* Index */
+    /* Menu */
+    /* About */
+    #main-about {
+        display: grid;
+        grid-template-areas:
+        "hi ne";
+        grid-template-columns: 2fr 1fr;
+    }
+    #history {
+        grid-area: hi;
+    }
+    #news {
+        grid-area: ne;
     }
 
 
+    /* Contact */
+    #main-contact {
+        display: grid;
+        grid-template-areas:
+        "op op lo"
+        "co so lo";
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1.5fr 1fr;
+    }
+    #location {
+        grid-area: lo;
+    }
+    #open {
+        grid-area: op;
+    }
+    #contacts {
+        grid-area: co;
+    }
+    #social {
+        grid-area: so;
+    }
+    #main-contact section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    /* Wrappers */
     #wrapperi {
         height: 100vh;
-
         display: grid;
         grid-template-areas:
         "tp"
@@ -205,7 +302,6 @@ iframe {
 }
     #wrapperm {
         height: 100vh;
-
         display: grid;
         grid-template-areas:
         "tp"
@@ -215,7 +311,6 @@ iframe {
 }
     #wrappera {
         height: 100vh;
-
         display: grid;
         grid-template-areas:
         "tp"
@@ -225,7 +320,6 @@ iframe {
 }
     #wrapperc {
         height: 100vh;
-
         display: grid;
         grid-template-areas:
         "tp"

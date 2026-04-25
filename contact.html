@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Tommys Pizzeria</title>
+  <title>Tommy's Pizzeria</title>
   <link rel="icon" type="image/x-icon" href="img/icons/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -20,13 +22,13 @@
 
   <div id="wrapperc">
     <header>
-      <h1>Tommys Pizzeria</h1>
+      <h1>Tommy's Pizzeria</h1>
 
       <img src="img/icons/logo.png" alt="logga" id="logo">
 
-      <button class="menu-btn">
-        <img src="img/icons/menu_icon.png" alt="menu icon">
-      </button>
+      <div class="menu-btn">
+        <i class="material-icons">menu</i>
+      </div>
 
       <nav id="desktopnav">
         <a href="index.html" class="navbuttons">Hem</a>
@@ -36,19 +38,21 @@
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main id="main-contact">
+
+      <section id="location">
         <h2>Hitta hit</h2>
         <iframe
-          src="https://maps.google.com/maps?q=TOMMYSPIZZERIA+TORSLANDA+TORG&z=16&output=embed"
+          src="https://maps.google.com/maps?q=Tommy'sPIZZERIA+TORSLANDA+TORG&z=16&output=embed"
           style="border:0;"
           loading="lazy"
           allowfullscreen>
         </iframe>
+        <p></p>
       </section>
       
-      <section>
-        <table id="openinghours">
+      <section id="open">
+        <table id="open-table">
           <caption class="open">
             <h2>Våra Öppetider</h2>
           </caption>
@@ -87,34 +91,34 @@
 
       <section id="contacts">
         <h2>Kontakta oss</h2>
-        <a href="mailto:info@kafesolglimt.com" class="linktext">
-          <span >info@kafesolglimt.com</span>
+        <a href="mailto:mexmesutab@gmail.com" class="linktext">
+          <span >mexmesutab@gmail.com</span>
         </a>
-        <a href="tel:070-1740635" class="linktext">
-          <span>070-1740635</span>
+        <a href="tel:031-564771" class="linktext">
+          <span>031-564771</span>
         </a>
       </section>
 
       <section id="social">
         <h2>Sociala medier</h2>
-        <a href="https://www.instagram.com/tommys_pizzeria/">
+        <a href="https://www.instagram.com/Tommy's_pizzeria/">
           <img src="img/icons/instagram_black_logo.png" class="socialIcon">
-          <span>tommys_pizzeria</span>
+          <span>Tommy's_pizzeria</span>
         </a>
-        <a href="https://www.facebook.com/tommys_pizzeria/">
+        <a href="https://www.facebook.com/Tommy's_pizzeria/">
           <img src="img/icons/facebook_blue_logo.png" class="socialIcon">
-          <span>tommys_pizzeria</span>
+          <span>Tommy's_pizzeria</span>
         </a>
-        <a href="https://www.x.com/pizzeria_tommys/">
+        <a href="https://www.x.com/pizzeria_Tommy's/">
           <img src="img/icons/x_black_logo.png" class="socialIcon">
-          <span>pizzeria_tommys</span>
+          <span>pizzeria_Tommy's</span>
         </a>
       </section>
     </main>
 
     <footer>
       <div>
-        <a href="https://www.google.com/maps/place/Nordenski%C3%B6ldsgatan+1,+413+09+G%C3%B6teborgs" class="linktext">
+        <a href="https://www.google.com/maps/search/Tommy's+Pizzeria+Torslanda" class="linktext">
           <span>Torslanda Torg 3A</span>
         </a>
       </div>
