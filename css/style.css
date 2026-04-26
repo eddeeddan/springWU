@@ -8,6 +8,11 @@
     --font-main: 'Roboto', sans-serif;
 }
 
+.linktext {
+    text-decoration: none;
+    color: var(--text-clr2);
+}
+
 body {
     font-family: var(--font-main);
     color: var(--text-clr2);
@@ -46,17 +51,51 @@ footer {
     justify-content: space-evenly;
 }
 
-.menu-btn img {
-  width: 100%;
-  height: 100%;
-}
-
 iframe {
     width: 50%;
     height: 450px;
 }
 
 /* Temporary */
+.menu-item {
+    padding: 1rem;
+}
+
+/* Index */
+#call-button {
+    background-color: yellowgreen;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.25rem solid var(--primary-clr);
+}
+#menu-button {
+    background-color: var(--background-clr);
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.25rem solid var(--primary-clr);
+}
+/* Menu */
+#kebabpizza {
+    grid-area: kp;
+}
+#inbakadpizza {
+    grid-area: ip;
+}
+#kebaber {
+    grid-area: kb;
+}
+#sallader {
+    grid-area: sd;
+}
+.menu-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* About */
+/* Contact */
 
 /* mobil */
 @media screen and (max-width: 1000px) {
@@ -77,8 +116,6 @@ iframe {
   }
     #logo {
         grid-area: lg;
-
-        width: 15vw;
         height: 15vw;
 }
     #desktopnav  {
@@ -118,19 +155,18 @@ iframe {
         justify-content: center;
         font-size: 10vw;
     }
-    
-    #kebabpizza {
-        grid-area: kp;
+    /* Index */
+    #main-index {
+        background-image: url('../img/backgrounds/background2.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*justify-content: space-evenly;*/
+        align-items: center;
     }
-    #inbakadpizza {
-        grid-area: ip;
-    }
-    #kebaber {
-        grid-area: kb;
-    }
-    #sallader {
-        grid-area: sd;
-    }
+    /* Menu */
     #meny{
         display: grid;
         grid-template-areas:
@@ -139,19 +175,8 @@ iframe {
         "kb"
         "sd";
     }
-    .menu-item {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 1rem;
-        margin: 1rem;
-        width: 35%;
-    }
-    #menu-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* About */
+    /* Contact */
 
     /* Wrappers */
     #wrapperi {
@@ -235,20 +260,29 @@ iframe {
         display: none;
     }
 
-    #maini {
+    
+    /* Index */
+    #main-index {
         background-image: url('../img/backgrounds/background1.jpg');
         background-size: cover;
         background-position: center;
-    }
-
-    #meny{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .menu-item {
-        /* background-color:lightcoral; */
-    }
-    /* Index */
     /* Menu */
+    #main-menu {
+        display: grid;
+        grid-template-areas:
+        "kp ip"
+        "kb sd";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #menu-item {
+        width: 21vw;;
+    }
     /* About */
     #main-about {
         display: grid;
@@ -262,8 +296,6 @@ iframe {
     #news {
         grid-area: ne;
     }
-
-
     /* Contact */
     #main-contact {
         display: grid;
