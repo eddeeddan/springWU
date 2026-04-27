@@ -3,7 +3,7 @@
     --secondary-clr: #fb8e25;
     --accent-clr1: rgba(41, 41, 41, 0.75);
     --accent-clr2: rgba(8, 120, 19, 1);
-    --accent-clr3: rgb(68, 59, 59, 0.5);
+    --accent-clr3: rgba(68, 59, 59, 0.5);
     --background-clr: #101a3d;
 
     --text-clr1: #ffffff;
@@ -122,7 +122,6 @@ footer {
 }
 
 /* mobil */
-@media screen and (max-width: 1000px) {
     /* Header */
     header {
         grid-area: tp;
@@ -305,7 +304,6 @@ footer {
         "mn";
         grid-template-rows: 10vh 1fr;  
     }
-}
 
 /* desktop */
 @media screen and (min-width: 1000px) {
