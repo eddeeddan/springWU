@@ -2,7 +2,8 @@
     --primary-clr: #6f150d;
     --secondary-clr: #fb8e25;
     --accent-clr1: rgba(41, 41, 41, 0.75);
-    --accent-clr2: rgba(8, 120, 19, 0.75);
+    --accent-clr2: rgba(8, 120, 19, 1);
+    --accent-clr3: rgb(68, 59, 59, 0.5);
     --background-clr: #101a3d;
 
     --text-clr1: #ffffff;
@@ -99,6 +100,12 @@ footer {
 }
 #news {
     grid-area: ne;
+}
+#news article {
+    background-color: var(--accent-clr3);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 /* Contact */
 #location {
